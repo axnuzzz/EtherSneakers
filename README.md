@@ -1,4 +1,4 @@
-# EtherSneakers Marketplace 😺
+# EtherSneakers Marketplace 
 
 ### Functionalities
 
