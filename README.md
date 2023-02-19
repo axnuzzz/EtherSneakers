@@ -1,38 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Kittos NFT Marketplace 😺
 
-## Getting Started
+<img width="1600" alt="credit" src="https://user-images.githubusercontent.com/67114280/194313285-d2c41add-84ab-43e3-bc4e-4ed62ed215c1.png">
 
-First, run the development server:
+### Functionalities
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+- [x] New Listed Assets
+- [x] Mint NFT
+- [x] Buy NFT
+- [x] Resell NFT
+- [x] Purchased NFT
+
+### Stack
+
+- Language : [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- Frontend : [Next Js](https://nextjs.org/)
+- Smart Contract Lang : [Solidity](https://docs.soliditylang.org/en/v0.8.17/)
+- Dev Environment for ETH Software: [Hardhat](https://hardhat.org/)
+- Testing: [ChaiJs](https://www.chaijs.com/)
+- File Storage : [Arweave](https://www.arweave.org/)
+- Scaling Permenant Storage - [Bundlr](https://bundlr.network/)
+- Network : [Polygon Mumbai](https://polygon.technology/)
+- Fonts - [Google Fonts](https://fonts.google.com/)
+- Style : [Tailwind CSS](https://tailwindcss.com/)
+- Toast: [React Toastify](https://fkhadra.github.io/react-toastify/introduction/)
+- Design : [Figma](https://www.figma.com/)
+
+### Installation
+
+#### Fork The Repo
+
+Click on the Right Side of the Top Bar to After the Watch button. <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/GitHub_Fork_Button.png" width="120px" />
+
+Now It will be available in GitHub Account.
+
+#### OR
+
+#### Clone
+
+- Clone this repo with url
+
+```shell
+git clone https://github.com/Aakrut/kittos-nft-marketplace
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+##### Setup
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+> Install npm dependencies using npm install
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+```shell
+cd ethersneakers && npm install
+```
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> Set up environment Variables I already Provided .env.example file.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+> Create a .env file in the root directory.
 
-## Learn More
+> Set up required environment variables.
 
-To learn more about Next.js, take a look at the following resources:
+```.env
+URL="TESTNET_URI"
+PRIVATE_KEY="METAMASK_PRIVATE_KEY"
+NEXT_PUBLIC_RPC_URL="TESTNET_URI"
+NEXT_PUBLIC_CONTRACT_ADDRESS="CONTRACT_ADDRESS"
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> In the Root Directory First Compile Your Smart Contract with This Following Command.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+```shell
+npx hardhat compile
+```
 
-## Deploy on Vercel
+> After Deploy Smart Contract to the Polygon Mumbai Testnet with this command.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```shell
+npx hardhat run scripts/deploy.js --network mumbai
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+> Copy Smart Contract Address and replace it in with your "CONTRACT_ADDRESS"
+
+```
+NEXT_PUBLIC_CONTRACT_ADDRESS="CONTRACT_ADDRESS"
+```
+
+Let's Run this command for dev
+
+```shell
+npm run dev
+--or--
+yarn dev
+```

@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "image": "images/wallet.png",
+    "title": "Set up your wallet",
+    "description": "Choose Metamask Wallet For Best Experience"
+  },
+  {
+    "id": 2,
+    "image": "images/nft2.png",
+    "title": "Add your NFTs",
+    "description": "Once you’ve set up your wallet of choice,start collecting your fav Sneakers"
+  },
+  {
+    "id": 3,
+    "image": "images/nft3.png",
+    "title": "List them for sale",
+    "description": "List Out all Your top Sneakers available for sale"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Air Jordan 1 High Lost and Found",
+    "bgImage": "/images/placeholder1.png",
+    "image": "/images/main1.png",
+    "price": "60K"
+  },
+  {
+    "id": 2,
+    "name": "Air Jordan 1 High Travis Scott",
+    "bgImage": "/images/placeholder2.png",
+    "image": "/images/main2.png",
+    "price": "135K"
+  },
+  {
+    "id": 3,
+    "name": "Air Jordan 1 High Off White Chicago",
+    "bgImage": "/images/placeholder3.png",
+    "image": "/images/main3.png",
+    "price": "565K "
+  },
+  {
+    "id": 4,
+    "name": "UA Curry4",
+    "bgImage": "/images/placeholder4.png",
+    "image": "/images/main4.png",
+    "price": "19.3K"
+  }
+]
