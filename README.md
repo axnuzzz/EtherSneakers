@@ -1,14 +1,12 @@
-# Kittos NFT Marketplace 😺
-
-<img width="1600" alt="credit" src="https://user-images.githubusercontent.com/67114280/194313285-d2c41add-84ab-43e3-bc4e-4ed62ed215c1.png">
+# EtherSneakers Marketplace 😺
 
 ### Functionalities
 
-- [x] New Listed Assets
-- [x] Mint NFT
-- [x] Buy NFT
-- [x] Resell NFT
-- [x] Purchased NFT
+- [x] New Listed Sneakers
+- [x] Mint your collection
+- [x] Buy Sneaker
+- [x] Resell Sneakers
+- [x] Purchased Sneakers
 
 ### Stack
 
@@ -16,7 +14,6 @@
 - Frontend : [Next Js](https://nextjs.org/)
 - Smart Contract Lang : [Solidity](https://docs.soliditylang.org/en/v0.8.17/)
 - Dev Environment for ETH Software: [Hardhat](https://hardhat.org/)
-- Testing: [ChaiJs](https://www.chaijs.com/)
 - File Storage : [Arweave](https://www.arweave.org/)
 - Scaling Permenant Storage - [Bundlr](https://bundlr.network/)
 - Network : [Polygon Mumbai](https://polygon.technology/)
@@ -40,7 +37,7 @@ Now It will be available in GitHub Account.
 - Clone this repo with url
 
 ```shell
-git clone https://github.com/Aakrut/kittos-nft-marketplace
+git clone https://github.com/axnuzzz/EtherSneakers
 ```
 
 ##### Setup
@@ -70,10 +67,10 @@ NEXT_PUBLIC_CONTRACT_ADDRESS="CONTRACT_ADDRESS"
 npx hardhat compile
 ```
 
-> After Deploy Smart Contract to the Polygon Mumbai Testnet with this command.
+> After Deploy Smart Contract to a testnet with this command.
 
 ```shell
-npx hardhat run scripts/deploy.js --network mumbai
+npx hardhat run scripts/deploy.js --network ${testnet name}
 ```
 
 > Copy Smart Contract Address and replace it in with your "CONTRACT_ADDRESS"
